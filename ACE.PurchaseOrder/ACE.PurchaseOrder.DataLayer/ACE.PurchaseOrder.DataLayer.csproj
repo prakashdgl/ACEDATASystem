@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47B89661-85D4-4AA2-A3C1-D6E902F47603}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ACE.PurchaseOrder.DataLayer</RootNamespace>
+    <AssemblyName>ACE.PurchaseOrder.DataLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\ThirdpartyDLL\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\ThirdpartyDLL\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\ThirdpartyDLL\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\City.cs" />
+    <Compile Include="Masters\MaterialDL.cs" />
+    <Compile Include="Masters\AgentDL.cs" />
+    <Compile Include="Masters\BloodGroupDL.cs" />
+    <Compile Include="Masters\CityDL.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Masters\CommonForAllDL.cs" />
+    <Compile Include="Common\CommonDL.cs" />
+    <Compile Include="Common\DateFormatDL.cs" />
+    <Compile Include="Company\CompanyDL.cs" />
+    <Compile Include="Company\DepartmentDL.cs" />
+    <Compile Include="Comparers\CompanyXUsersComparers.cs" />
+    <Compile Include="Masters\ContactDL.cs" />
+    <Compile Include="Masters\CountryDL.cs" />
+    <Compile Include="Masters\DesignationDL.cs" />
+    <Compile Include="Masters\DistrictDL.cs" />
+    <Compile Include="Employee\EmployeeAddressDL.cs" />
+    <Compile Include="Employee\EmployeeCertificationDL.cs" />
+    <Compile Include="Employee\EmployeeDL.cs" />
+    <Compile Include="Employee\EmployeeEducationDL.cs" />
+    <Compile Include="Employee\EmployeeExperienceDL.cs" />
+    <Compile Include="Employee\EmployeeFamilyDL.cs" />
+    <Compile Include="Employee\EmployeeJobStatusDL.cs" />
+    <Compile Include="Employee\EmployeeLanguageKnownDL.cs" />
+    <Compile Include="Employee\EmployeePresentEmployerProjectDL.cs" />
+    <Compile Include="Employee\EmployeePreviousEmployersProjectDL.cs" />
+    <Compile Include="Employee\EmployeeProjectDL.cs" />
+    <Compile Include="Employee\EmployeeSkillDL.cs" />
+    <Compile Include="Employee\ReportingToDL.cs" />
+    <Compile Include="Feedback\FeedbackDL.cs" />
+    <Compile Include="Feedback\FeedbackPriorityDL.cs" />
+    <Compile Include="Feedback\FeedbackReplyDL.cs" />
+    <Compile Include="Feedback\FeedbackStatusDL.cs" />
+    <Compile Include="Feedback\FeedbackTypeDL.cs" />
+    <Compile Include="Masters\GenderDL.cs" />
+    <Compile Include="Masters\HierarchicalDataSet.cs" />
+    <Compile Include="Masters\JobRoleDL.cs" />
+    <Compile Include="Masters\JobStatusDL.cs" />
+    <Compile Include="Masters\LanguagesDL.cs" />
+    <Compile Include="Masters\MailingAddressDL.cs" />
+    <Compile Include="Masters\MajorDL.cs" />
+    <Compile Include="Masters\MaritalStatusDL.cs" />
+    <Compile Include="Masters\MenuDL.cs" />
+    <Compile Include="Masters\NationalityDL.cs" />
+    <Compile Include="Modules\PODocumentUploadDL.cs" />
+    <Compile Include="Modules\EnquiryRegisterDL.cs" />
+    <Compile Include="Modules\OrderAcceptanceParticularsListDL.cs" />
+    <Compile Include="Modules\OrderAcceptanceChecklistDL.cs" />
+    <Compile Include="Modules\EnquiryReviewListDL.cs" />
+    <Compile Include="Modules\EnquiryReviewChecklistDL.cs" />
+    <Compile Include="Modules\ProductDL.cs" />
+    <Compile Include="Modules\StockDL.cs" />
+    <Compile Include="Project\ActivityDL.cs" />
+    <Compile Include="Project\ClientDL.cs" />
+    <Compile Include="Project\ProjectDL.cs" />
+    <Compile Include="Project\ProjectHistoryDL.cs" />
+    <Compile Include="Project\ProjectPriorityDL.cs" />
+    <Compile Include="Project\ProjectStatusDL.cs" />
+    <Compile Include="Project\ProjectTaskDL.cs" />
+    <Compile Include="Project\ProjectTaskStatusDL.cs" />
+    <Compile Include="Project\ProjectXResourceDL.cs" />
+    <Compile Include="Project\ProjectXTechnologyDL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Masters\QualificationDL.cs" />
+    <Compile Include="PurchaseOrder\PurchaseWorkOrderDL.cs" />
+    <Compile Include="PurchaseOrder\PurchaseOrderDL.cs" />
+    <Compile Include="Quotes\InspirationQuoteDL.cs" />
+    <Compile Include="Masters\RelationshipDL.cs" />
+    <Compile Include="Masters\ReligionDL.cs" />
+    <Compile Include="Masters\SkillLevelDL.cs" />
+    <Compile Include="Masters\StateDL.cs" />
+    <Compile Include="Masters\TechnologyDL.cs" />
+    <Compile Include="Masters\TitlesDL.cs" />
+    <Compile Include="Masters\UniversityDL.cs" />
+    <Compile Include="Supplier\SupplierDL.cs" />
+    <Compile Include="UserManagement\CompanyXUsersDL.cs" />
+    <Compile Include="UserManagement\LoginUserDL.cs" />
+    <Compile Include="UserManagement\RolesDL.cs" />
+    <Compile Include="UserManagement\RolesXPagesDL.cs" />
+    <Compile Include="UserManagement\SettingsDL.cs" />
+    <Compile Include="UserManagement\UserPageSettingsDL.cs" />
+    <Compile Include="UserManagement\UsersDL.cs" />
+    <Compile Include="UserManagement\UsersPhotoDL.cs" />
+    <Compile Include="UserManagement\UsersXPagesDL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ACE.PurchaseOrder.CommonLayer\ACE.PurchaseOrder.CommonLayer.csproj">
+      <Project>{33ab2351-636a-4e39-b2d6-5181fc8d4c7d}</Project>
+      <Name>ACE.PurchaseOrder.CommonLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

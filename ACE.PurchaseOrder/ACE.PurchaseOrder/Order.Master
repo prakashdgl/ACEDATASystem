@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Order.Master.cs" Inherits="ACE.PurchaseOrder.Order" %>
+
+<%@ Register Src="~/UserControls/Footer.ascx" TagName="OrderFooter" TagPrefix="uc3" %>
+<%@ Register Src="~/UserControls/Menu.ascx" TagName="OrderMenu" TagPrefix="uc2" %>
+<%@ Register Src="~/UserControls/Header.ascx" TagName="OrderHeader" TagPrefix="uc1" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+  <title>Welcome To ACE</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.01)" />
+  <link href="Style/OrderStyleSheet.css" rel="stylesheet" type="text/css" />
+  <link href="Style/JQueryTheme/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <asp:ContentPlaceHolder ID="cphHead" runat="server">
+  </asp:ContentPlaceHolder>
+  <form id="form1" runat="server">
+  <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true"
+    ScriptMode="Release" />
+  <asp:UpdateProgress ID="UpdateProgress2" runat="server" AssociatedUpdatePanelID=""
+    DisplayAfter="0" DynamicLayout="true">
+    <ProgressTemplate>
+      <asp:Panel ID="pnlUpdateProgress" runat="server" Style="display: none; text-align: center;
+        vertical-align: middle; z-index: 9999; position: relative; top: 50%; right: 45%;">
+        <div style="text-align: center;">
+          <span>
+            <img id="IMG1" alt="" runat="server" src="~/Images/ajax-loader.gif" /></span>
+          <br />
+          <br />
+          <span style="font-weight: bold; right: 30%; position: relative; vertical-align: middle;
+            font-size: Large; color: white; font-family: Arial;">Processing</span>
+        </div>
+      </asp:Panel>
+    </ProgressTemplate>
+  </asp:UpdateProgress>
+  <%-- MODAL POPUP FOR PROGRESS INDICATOR --%>
+  <cc1:ModalPopupExtender ID="MPE_pnlUpdateProgress" runat="server" BackgroundCssClass="modalBackground"
+    TargetControlID="pnlUpdateProgress" PopupControlID="pnlUpdateProgress">
+  </cc1:ModalPopupExtender>
+  <div id="container">
+    <div id="headerBg">
+      <div id="headerbgBox">
+        <div id="headerInfo">
+          <uc1:OrderHeader ID="OrderHeader" runat="server" />
+        </div>
+      </div>
+    </div>
+    <div id="contentBg">
+      <div id="content">
+        <div class="navigation" style="width: 150px">
+          <uc2:OrderMenu ID="OrderMenu" runat="server" />
+        </div>
+        <div class="right" style="background-color: white;">
+          <asp:ContentPlaceHolder ID="cphPageMainContent" runat="server">
+          </asp:ContentPlaceHolder>
+        </div>
+        <div style="clear: both">
+        </div>
+      </div><hr />
+     
+    </div>
+     <div id="footer">
+      <uc3:OrderFooter ID="OrderFooter" runat="server" />
+    </div>   
+  </div>
+  </form>
+  <script type="text/javascript">
+    Sys.Browser.WebKit = {};
+    if (navigator.userAgent.indexOf('WebKit/') > -1) {
+      Sys.Browser.agent = Sys.Browser.WebKit;
+      Sys.Browser.version = parseFloat(navigator.userAgent.match(/WebKit\/(\d+(\.\d+)?)/)[1]);
+      Sys.Browser.name = 'WebKit';
+    }
+
+    DisableDefault();
+
+    function DisableDefault(event) {
+      $(':text').bind('keydown', function (e) { //on keydown for all textboxes  
+        if (e.keyCode == 13) //if this is enter key  
+          e.preventDefault();
+      });
+    }
+
+    var ModalProgress = '<%= MPE_pnlUpdateProgress.ClientID %>';
+
+    Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginReq);
+    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endReq);
+
+    // Function is called when the Asynchronous postback starts, used to SHOW the Modal Popup.
+    function beginReq(sender, args) {
+      $find(ModalProgress).show(); // shows the Popup.
+    }
+
+    // Function is called when the Asynchronous postback ends, used to HIDE the Modal Popup.
+    function endReq(sender, args) {
+      $find(ModalProgress).hide(); // shows the Popup.
+      DisableDefault();
+    }
+  </script>
+</body>
+</html>

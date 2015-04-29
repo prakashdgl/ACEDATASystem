@@ -1,0 +1,60 @@
+F:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.dll
+F:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.pdb
+F:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.dll
+F:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.pdb
+F:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.csprojResolveAssemblyReference.cache
+F:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.dll
+F:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.pdb
+D:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.dll
+D:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.pdb
+D:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.dll
+D:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.pdb
+D:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.csprojResolveAssemblyReference.cache
+D:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.dll
+D:\Projects\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.pdb
+F:\currentproject\sam proj\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.dll
+F:\currentproject\sam proj\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.pdb
+F:\currentproject\sam proj\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.dll
+F:\currentproject\sam proj\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\currentproject\sam proj\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\currentproject\sam proj\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\currentproject\sam proj\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.pdb
+F:\currentproject\sam proj\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.csprojResolveAssemblyReference.cache
+F:\currentproject\sam proj\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.dll
+F:\currentproject\sam proj\WebappACEPetro\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.pdb
+D:\current project\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.dll
+D:\current project\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.pdb
+D:\current project\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.dll
+D:\current project\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\current project\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\current project\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\current project\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.pdb
+D:\current project\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.csprojResolveAssemblyReference.cache
+D:\current project\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.dll
+D:\current project\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.pdb
+D:\current project\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.dll
+D:\current project\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.pdb
+D:\current project\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.dll
+D:\current project\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\current project\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\current project\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\current project\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.pdb
+D:\current project\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.csprojResolveAssemblyReference.cache
+D:\current project\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.dll
+D:\current project\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.pdb
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.dll
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.pdb
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.dll
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.pdb
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.csprojResolveAssemblyReference.cache
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.dll
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.pdb
