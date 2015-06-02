@@ -274,7 +274,6 @@
     <Content Include="Images\NewImages\footer-bg.jpg" />
     <Content Include="Images\NewImages\footer-bg.png" />
     <Content Include="Images\NewImages\footer.png" />
-    <Content Include="Images\NewImages\footer_logo.png" />
     <Content Include="Images\NewImages\header-bg-image.jpg" />
     <Content Include="Images\NewImages\header-bg.jpg" />
     <Content Include="Images\NewImages\heartbeat.png" />
@@ -283,12 +282,7 @@
     <Content Include="Images\NewImages\menu-hover-bg.png" />
     <Content Include="Images\NewImages\nav-bg-over.gif" />
     <Content Include="Images\NewImages\nav-bg.gif" />
-    <Content Include="Images\NewImages\other-info.gif" />
-    <Content Include="Images\NewImages\title-attendance.png" />
     <Content Include="Images\NewImages\title-bg.jpg" />
-    <Content Include="Images\NewImages\title-birthday.png" />
-    <Content Include="Images\NewImages\title-suggestion.png" />
-    <Content Include="Images\NewImages\title-wedding.png" />
     <Content Include="Images\next.png" />
     <Content Include="Images\NotSubmittedStatus.gif" />
     <Content Include="Images\No_photo.jpg" />
@@ -355,6 +349,7 @@
       <DependentUpon>ACEDS.xsd</DependentUpon>
     </Content>
     <Content Include="COrder.Master" />
+    <None Include="Properties\PublishProfiles\ACEPetroNetworks.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="PuchaseOrder\AddEditEnquiryRegister.aspx" />
     <Content Include="PuchaseOrder\AddEditEnquiryReviewCheckList.aspx" />

@@ -345,5 +345,25 @@ namespace ACE.PurchaseOrder.DataLayer
             }
             return ds;
         }
+
+        public System.Data.DataSet GetPurchaseWorkOrderList()
+        {
+            System.Data.DataSet dataSet;
+            dataSet = new System.Data.DataSet();
+            try
+            {
+                Database database = DatabaseFactory.CreateDatabase(this._myConnection.DatabaseName);
+                System.Data.Common.DbCommand dbCommand = database.GetStoredProcCommand("spGetPurchaseWorkOrderList");
+                dbCommand.Parameters.Clear();
+                dbCommand.CommandTimeout = 300;                
+                dataSet = database.ExecuteDataSet(dbCommand);
+            }
+            catch (System.Exception exception1)
+            {
+                ErrorLog.LogErrorMessageToDB("", "PurchaseWorkOrderDL.cs", "GetPurchaseWorkOrderList", exception1.Message.ToString(), this._myConnection);
+                throw;
+            }
+            return dataSet;
+        }
     }
 }

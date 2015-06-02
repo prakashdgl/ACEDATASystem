@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/COrder.Master" AutoEventWireup="true" CodeBehind="ManageEnquiryReviewCheckList.aspx.cs" Inherits="ACE.PurchaseOrder.PuchaseOrder.ManageEnquiryReviewCheckList" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Order.Master" AutoEventWireup="true" CodeBehind="ManageEnquiryReviewCheckList.aspx.cs" Inherits="ACE.PurchaseOrder.PuchaseOrder.ManageEnquiryReviewCheckList" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphPageMainContent" runat="server">

@@ -1,0 +1,8 @@
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\bin\Release\ACE.PurchaseOrder.CommonLayer.dll
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\bin\Release\ACE.PurchaseOrder.CommonLayer.pdb
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\obj\Release\ACE.PurchaseOrder.CommonLayer.csprojResolveAssemblyReference.cache
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\obj\Release\ACE.PurchaseOrder.CommonLayer.dll
+F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\obj\Release\ACE.PurchaseOrder.CommonLayer.pdb

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/COrder.Master" AutoEventWireup="true" CodeBehind="ManageStockMaintanence.aspx.cs" Inherits="ACE.PurchaseOrder.Modules.ManageStockMaintanence" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Order.Master" AutoEventWireup="true" CodeBehind="ManageStockMaintanence.aspx.cs" Inherits="ACE.PurchaseOrder.Modules.ManageStockMaintanence" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 

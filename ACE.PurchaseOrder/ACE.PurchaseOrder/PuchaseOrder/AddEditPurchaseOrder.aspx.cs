@@ -353,11 +353,11 @@ namespace ACE.PurchaseOrder.PuchaseOrder
                 _currentPurchaseWorkOrder.TotalPrice = Convert.ToDecimal(txtTotalPrice.Text);
 
                 dTime = DateTime.ParseExact(txtReqatSpore.Text, dtFormat, null);
-                _currentPurchaseWorkOrder.ReqatSpore = Convert.ToDateTime(txtReqatSpore.Text);
+                _currentPurchaseWorkOrder.ReqatSpore = Convert.ToDateTime(dTime);
                 dTime = DateTime.ParseExact(txtDTofStock.Text, dtFormat, null);
-                _currentPurchaseWorkOrder.DTofStock = Convert.ToDateTime(txtDTofStock.Text);
+                _currentPurchaseWorkOrder.DTofStock = Convert.ToDateTime(dTime);
                 dTime = DateTime.ParseExact(txtDTofDispatch.Text, dtFormat, null);
-                _currentPurchaseWorkOrder.DTofDispatch = Convert.ToDateTime(txtDTofDispatch.Text);
+                _currentPurchaseWorkOrder.DTofDispatch = Convert.ToDateTime(dTime);
 
                 _currentPurchaseWorkOrder.Remarks = txtRemarks.Text;
                 _currentPurchaseWorkOrder.AuthorisedSignatureID = Convert.ToInt32(ddlReviewedBy.SelectedValue);

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/COrder.Master" AutoEventWireup="true" CodeBehind="AddEditPurchaseOrder.aspx.cs" Inherits="ACE.PurchaseOrder.PuchaseOrder.AddEditPurchaseOrder" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Order.Master" AutoEventWireup="true" CodeBehind="AddEditPurchaseOrder.aspx.cs" Inherits="ACE.PurchaseOrder.PuchaseOrder.AddEditPurchaseOrder" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">

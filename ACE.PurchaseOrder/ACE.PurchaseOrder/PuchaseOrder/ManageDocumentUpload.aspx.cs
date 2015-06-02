@@ -40,7 +40,7 @@ namespace ACE.PurchaseOrder.PuchaseOrder
                     fileDL.WorkOrderDocumentId = 0;
                     fileDL.WorkOrderId = 1;
                     fileDL.ContactId = Convert.ToInt32(ddlListContact.SelectedValue);
-                    fileDL.PONo = Convert.ToInt32(ddlPONO.SelectedValue).ToString();
+                    fileDL.PONo = Convert.ToString(ddlPONO.SelectedValue).ToString();
                     fileDL.FileName = fileUpload.FileName;
                     fileDL.FileExtension = getFileExtension(fileUpload.FileName);
                     fileDL.FileDescription = txtFileDescription.Text;
@@ -382,9 +382,9 @@ namespace ACE.PurchaseOrder.PuchaseOrder
         protected void ddlListContact_SelectedIndexChanged(object sender, EventArgs e)
         {
             ddlPONO.Items.Clear();
-            ddlPONO.DataSource = new ContactDL().GetContactList(Convert.ToInt32(hfCompanyID.Value)).Tables[0];
-            ddlPONO.DataTextField = "FName";
-            ddlPONO.DataValueField = "ContactID";
+            ddlPONO.DataSource = new PurchaseWorkOrderDL().GetPurchaseWorkOrderList().Tables[0];
+            ddlPONO.DataTextField = "WorkOrder";
+            ddlPONO.DataValueField = "WorkOrder";
             ddlPONO.DataBind();
             ddlPONO.Items.Insert(0, "-- Select One --");
             ddlPONO.Items[0].Value = "";

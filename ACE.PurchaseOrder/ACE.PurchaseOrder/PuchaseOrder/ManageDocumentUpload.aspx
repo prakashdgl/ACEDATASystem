@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/COrder.Master" AutoEventWireup="true" CodeBehind="ManageDocumentUpload.aspx.cs" Inherits="ACE.PurchaseOrder.PuchaseOrder.ManageDocumentUpload" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Order.Master" AutoEventWireup="true" CodeBehind="ManageDocumentUpload.aspx.cs" Inherits="ACE.PurchaseOrder.PuchaseOrder.ManageDocumentUpload" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 
@@ -97,7 +97,7 @@
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td width="130">
-                                                                                            <b>Select Customer</b><asp:Label ID="Label4" runat="server" Text="*" CssClass="LabelMandatory"></asp:Label>
+                                                                                            <b>Select Work Order</b><asp:Label ID="Label4" runat="server" Text="*" CssClass="LabelMandatory"></asp:Label>
                                                                                         </td>
                                                                                         <td>
                                                                                             <asp:DropDownList ID="ddlPONO" runat="server" AutoPostBack="false" Width="200px">
