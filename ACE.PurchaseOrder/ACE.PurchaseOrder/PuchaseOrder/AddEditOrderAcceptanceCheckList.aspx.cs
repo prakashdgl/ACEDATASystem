@@ -16,7 +16,7 @@ namespace ACE.PurchaseOrder.PuchaseOrder
         TemplateField _fieldNo = new TemplateField();
         TemplateField _fieldNA = new TemplateField();
         TemplateField _fieldRemarks = new TemplateField();
-        string _dateFormat = "dd/MM/yyyy";
+        string _dateFormat = "MM/dd/yyyy";
         protected void Page_Load(object sender, EventArgs e)
         {
             try
@@ -79,8 +79,11 @@ namespace ACE.PurchaseOrder.PuchaseOrder
                 ddlApprovedBy.Items.Insert(0, "--Select One--");
                 ddlApprovedBy.Items[0].Value = "";
 
-               
-              
+
+                OrderAcceptanceParticularsListDL rlDL = new OrderAcceptanceParticularsListDL();
+
+                gvOrderAcceptanceParticularsList.DataSource = rlDL.GetParticularsList().Tables[0];
+                gvOrderAcceptanceParticularsList.DataBind();
             }
             catch (Exception ex)
             {
@@ -150,14 +153,26 @@ namespace ACE.PurchaseOrder.PuchaseOrder
                 if (rbNotAccepted.Checked)
                     _currentOrderAcceptanceCheckList.ReviewStatus = rbNotAccepted.Text;
 
+
+                if (ddlReviewedBy.SelectedValue != "")
+                {
+                    _currentOrderAcceptanceCheckList.ReviewedByID = Convert.ToInt32(ddlReviewedBy.SelectedValue);
+                }
+
+                if (txtReviewedDate.Text != null || txtReviewedDate.Text != "")
+                {
+                    dTime = DateTime.ParseExact(txtReviewedDate.Text, dtFormat, null);
+                    _currentOrderAcceptanceCheckList.ReviewedDate = dTime;
+                }
+
+                if (ddlApprovedBy.SelectedValue != "")
+                {
+                    _currentOrderAcceptanceCheckList.ApprovedByID = Convert.ToInt32(ddlApprovedBy.SelectedValue);
+                    _currentOrderAcceptanceCheckList.ApprovedDate = dTime;
+                }
                 
-                _currentOrderAcceptanceCheckList.ReviewedByID = Convert.ToInt32(ddlReviewedBy.SelectedValue);
-                _currentOrderAcceptanceCheckList.ReviewedDate = dTime;
-                _currentOrderAcceptanceCheckList.ApprovedByID = Convert.ToInt32(ddlApprovedBy.SelectedValue);
-                _currentOrderAcceptanceCheckList.ApprovedDate = dTime;                
                 _currentOrderAcceptanceCheckList.AuditDate = dTime;
                 _currentOrderAcceptanceCheckList.AuditID = Convert.ToInt32(hfUserID.Value);
-
 
                 _currentOrderAcceptanceCheckList.ScreenMode = ScreenMode.Add;
                 TransactionResult transactionResult = _currentOrderAcceptanceCheckList.Commit();

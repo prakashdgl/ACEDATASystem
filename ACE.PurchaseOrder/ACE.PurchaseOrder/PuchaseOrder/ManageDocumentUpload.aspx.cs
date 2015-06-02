@@ -53,9 +53,7 @@ namespace ACE.PurchaseOrder.PuchaseOrder
                     string serverMapPath = Server.MapPath("~");
 
                     string fileContinuePath = "";
-                    fileContinuePath = @"PODocuments\" + Convert.ToInt32(ddlListContact.SelectedValue).ToString() + "\\" + Convert.ToInt32(ddlPONO.SelectedValue).ToString() + "\\" + "" + DateTime.Now.ToString("MMddyyyy") +
-                                       DateTime.Now.Date.Second.ToString() + "" + DateTime.Now.Date.Hour.ToString() + "" +
-                                       fileUpload.FileName.ToString();
+                    fileContinuePath = @"PODocuments\" + Convert.ToInt32(ddlListContact.SelectedValue).ToString() + "\\" + Convert.ToString(ddlPONO.SelectedValue).ToString() + "\\" + "" + DateTime.Now.ToString("MMddyyyy") + DateTime.Now.Date.Second.ToString() + "" + DateTime.Now.Date.Hour.ToString() + "" + fileUpload.FileName.ToString();
 
                     SaveFile(fileUploadFile, serverMapPath + "" + fileContinuePath);
                     fileDL.FilePathandFileName = fileContinuePath;

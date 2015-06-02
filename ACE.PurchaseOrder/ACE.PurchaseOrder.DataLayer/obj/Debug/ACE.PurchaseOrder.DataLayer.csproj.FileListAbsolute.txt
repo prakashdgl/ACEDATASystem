@@ -58,3 +58,13 @@ F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bi
 F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.csprojResolveAssemblyReference.cache
 F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.dll
 F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.pdb
+D:\CurrectProject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.dll
+D:\CurrectProject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.DataLayer.pdb
+D:\CurrectProject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.dll
+D:\CurrectProject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\CurrectProject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\CurrectProject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\CurrectProject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\bin\Debug\ACE.PurchaseOrder.CommonLayer.pdb
+D:\CurrectProject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.csprojResolveAssemblyReference.cache
+D:\CurrectProject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.dll
+D:\CurrectProject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.DataLayer\obj\Debug\ACE.PurchaseOrder.DataLayer.pdb

@@ -177,7 +177,7 @@
                                                                 <asp:RadioButton ID="rbCheckYes" AutoPostBack="false" GroupName="stee1" EnableViewState="true" runat="server" />
                                                                 <asp:RadioButton ID="rbCheckNo" AutoPostBack="false" GroupName="stee1" EnableViewState="true" runat="server" />
                                                             </ItemTemplate>
-                                                            <ItemStyle Width="40%" BackColor="OrangeRed" Height="100%" />
+                                                            <ItemStyle Width="40%" BackColor="pink" Height="100%" />
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="REMARKS">
                                                             <ItemTemplate>

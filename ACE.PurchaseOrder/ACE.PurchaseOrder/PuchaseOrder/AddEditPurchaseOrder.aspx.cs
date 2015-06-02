@@ -12,7 +12,7 @@ namespace ACE.PurchaseOrder.PuchaseOrder
 {
     public partial class AddEditPurchaseOrder : System.Web.UI.Page
     {
-        string _dateFormat = "dd/MM/yyyy";
+        string _dateFormat = "MM/dd/yyyy";
         PurchaseWorkOrderDL _currentPurchaseWorkOrder = new PurchaseWorkOrderDL();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -146,7 +146,7 @@ namespace ACE.PurchaseOrder.PuchaseOrder
                     //    listDL.Commit();
                     //}
 
-                    GetPurchaseOrderDetails(Convert.ToInt32(hfPurchaseOrderID.Value));
+                    
 
 
                     StringBuilder stringBuilder = new StringBuilder();
@@ -372,7 +372,7 @@ namespace ACE.PurchaseOrder.PuchaseOrder
                 bl = transactionResult.Status != TransactionStatus.Success;
                 if (!bl)
                 {
-                    //  GetPurchaseWorkOrderDetails();
+                    GetPurchaseOrderDetails(Convert.ToInt32(hfPurchaseOrderID.Value));
                     txtPurchaseWorkOrder.Text = "";
                     hfPurchaseWorkOrderID.Value = "0";
                 }
