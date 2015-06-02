@@ -278,6 +278,13 @@ namespace ACE.PurchaseOrder.PuchaseOrder
             ddlCustomer.Items.Insert(0, "-- Select One --");
             ddlCustomer.Items[0].Value = "";
 
+            ddlPONO.Items.Clear();
+            ddlPONO.DataSource = new PurchaseWorkOrderDL().GetPurchaseWorkOrderList().Tables[0];
+            ddlPONO.DataTextField = "WorkOrder";
+            ddlPONO.DataValueField = "WorkOrder";
+            ddlPONO.DataBind();
+            ddlPONO.Items.Insert(0, "-- Select One --");
+            ddlPONO.Items[0].Value = "";
 
 
             //ddlCustomer.ClearSelection();
@@ -381,13 +388,7 @@ namespace ACE.PurchaseOrder.PuchaseOrder
 
         protected void ddlListContact_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ddlPONO.Items.Clear();
-            ddlPONO.DataSource = new PurchaseWorkOrderDL().GetPurchaseWorkOrderList().Tables[0];
-            ddlPONO.DataTextField = "WorkOrder";
-            ddlPONO.DataValueField = "WorkOrder";
-            ddlPONO.DataBind();
-            ddlPONO.Items.Insert(0, "-- Select One --");
-            ddlPONO.Items[0].Value = "";
+            
         }
     }
 }

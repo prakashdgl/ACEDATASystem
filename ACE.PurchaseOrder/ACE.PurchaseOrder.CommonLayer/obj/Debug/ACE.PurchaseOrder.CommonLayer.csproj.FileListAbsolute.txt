@@ -35,4 +35,3 @@ F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\
 F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
 F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\obj\Debug\ACE.PurchaseOrder.CommonLayer.dll
 F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\obj\Debug\ACE.PurchaseOrder.CommonLayer.pdb
-F:\currentproject\ACEDATASystem\ACE.PurchaseOrder\ACE.PurchaseOrder.CommonLayer\obj\Debug\ACE.PurchaseOrder.CommonLayer.csprojResolveAssemblyReference.cache
