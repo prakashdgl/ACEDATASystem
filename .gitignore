@@ -1,0 +1,70 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+
+
+*.suo
+*.chw
+*.msi
+*.pyc
+*.user
+*.cache
+*.StyleCop
+*.pidb
+*.resources
+*.userprefs
+*Thumbs.db
+ACE.PurchaseOrder/_*
+ACE.PurchaseOrder/Releases
+ACE.PurchaseOrder/Reference
+ACE.PurchaseOrder/CSIGSC/bin
+ACE.PurchaseOrder/CSIGSC/obj
+ACE.PurchaseOrder/CSIGSC/bin/*
+ACE.PurchaseOrder/CSIGSC/obj/*
+
+ACE.PurchaseOrder/ACE.PurchaseOrder.CommonLayer/bin
+ACE.PurchaseOrder/ACE.PurchaseOrder.CommonLayer/obj
+ACE.PurchaseOrder/ACE.PurchaseOrder.CommonLayer/bin/*
+ACE.PurchaseOrder/ACE.PurchaseOrder.CommonLayer/obj/*
+
+
+ACE.PurchaseOrder/ACE.PurchaseOrder.DataLayer/bin
+ACE.PurchaseOrder/ACE.PurchaseOrder.DataLayer/obj
+ACE.PurchaseOrder/ACE.PurchaseOrder.DataLayer/bin/*
+ACE.PurchaseOrder/ACE.PurchaseOrder.DataLayer/obj/*
+
+ACE.PurchaseOrder/ACE.PurchaseOrder/bin
+ACE.PurchaseOrder/ACE.PurchaseOrder/obj
+ACE.PurchaseOrder/ACE.PurchaseOrder/bin/*
+ACE.PurchaseOrder/ACE.PurchaseOrder/obj/*
+
+ACE.PurchaseOrder/packages/*
+
