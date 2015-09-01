@@ -360,6 +360,7 @@
     <Content Include="PuchaseOrder\ManageEnquiryReviewCheckList.aspx" />
     <Content Include="PuchaseOrder\ManagePurchaseOrder.aspx" />
     <Content Include="PuchaseOrder\ManageOrderAcceptanceCheckList.aspx" />
+    <Content Include="QualityDocuments\CertificateOfCompliance.aspx" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
@@ -653,6 +654,13 @@
     </Compile>
     <Compile Include="PuchaseOrder\ManageOrderAcceptanceCheckList.aspx.designer.cs">
       <DependentUpon>ManageOrderAcceptanceCheckList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualityDocuments\CertificateOfCompliance.aspx.cs">
+      <DependentUpon>CertificateOfCompliance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualityDocuments\CertificateOfCompliance.aspx.designer.cs">
+      <DependentUpon>CertificateOfCompliance.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
