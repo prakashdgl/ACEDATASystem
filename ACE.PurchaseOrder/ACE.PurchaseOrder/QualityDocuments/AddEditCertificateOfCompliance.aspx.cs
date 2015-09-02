@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace ACE.PurchaseOrder.QualityDocuments
 {
-    public partial class CertificateOfCompliance : System.Web.UI.Page
+    public partial class AddEditCertificateOfCompliance : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

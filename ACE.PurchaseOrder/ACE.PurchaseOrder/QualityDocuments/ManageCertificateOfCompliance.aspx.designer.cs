@@ -10,7 +10,7 @@
 namespace ACE.PurchaseOrder.QualityDocuments {
     
     
-    public partial class CertificateOfCompliance {
+    public partial class ManageCertificateOfCompliance {
         
         /// <summary>
         /// Tr1 control.

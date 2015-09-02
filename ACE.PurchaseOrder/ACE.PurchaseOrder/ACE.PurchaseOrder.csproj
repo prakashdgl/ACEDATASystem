@@ -360,7 +360,8 @@
     <Content Include="PuchaseOrder\ManageEnquiryReviewCheckList.aspx" />
     <Content Include="PuchaseOrder\ManagePurchaseOrder.aspx" />
     <Content Include="PuchaseOrder\ManageOrderAcceptanceCheckList.aspx" />
-    <Content Include="QualityDocuments\CertificateOfCompliance.aspx" />
+    <Content Include="QualityDocuments\AddEditCertificateOfCompliance.aspx" />
+    <Content Include="QualityDocuments\ManageCertificateOfCompliance.aspx" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
@@ -655,12 +656,19 @@
     <Compile Include="PuchaseOrder\ManageOrderAcceptanceCheckList.aspx.designer.cs">
       <DependentUpon>ManageOrderAcceptanceCheckList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="QualityDocuments\CertificateOfCompliance.aspx.cs">
-      <DependentUpon>CertificateOfCompliance.aspx</DependentUpon>
+    <Compile Include="QualityDocuments\AddEditCertificateOfCompliance.aspx.cs">
+      <DependentUpon>AddEditCertificateOfCompliance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="QualityDocuments\CertificateOfCompliance.aspx.designer.cs">
-      <DependentUpon>CertificateOfCompliance.aspx</DependentUpon>
+    <Compile Include="QualityDocuments\AddEditCertificateOfCompliance.aspx.designer.cs">
+      <DependentUpon>AddEditCertificateOfCompliance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualityDocuments\ManageCertificateOfCompliance.aspx.cs">
+      <DependentUpon>ManageCertificateOfCompliance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualityDocuments\ManageCertificateOfCompliance.aspx.designer.cs">
+      <DependentUpon>ManageCertificateOfCompliance.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

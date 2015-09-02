@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/COrder.Master" AutoEventWireup="true" CodeBehind="CertificateOfCompliance.aspx.cs" Inherits="ACE.PurchaseOrder.QualityDocuments.CertificateOfCompliance" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/COrder.Master" AutoEventWireup="true" CodeBehind="ManageCertificateOfCompliance.aspx.cs" Inherits="ACE.PurchaseOrder.QualityDocuments.ManageCertificateOfCompliance" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphPageMainContent" runat="server">
