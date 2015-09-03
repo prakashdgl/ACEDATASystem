@@ -11,7 +11,37 @@ namespace ACE.PurchaseOrder.QualityDocuments
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
+
+            }
+        }
+
+        protected void ddlContact_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
+
+        protected void lnkAddCOCOrder_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void btnCOCAdd_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void btnCOCCancel_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void btnCancel_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+      
+
     }
 }

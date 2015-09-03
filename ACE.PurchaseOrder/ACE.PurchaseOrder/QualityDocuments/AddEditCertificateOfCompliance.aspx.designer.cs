@@ -265,49 +265,40 @@ namespace ACE.PurchaseOrder.QualityDocuments {
         protected global::System.Web.UI.WebControls.TextBox txtREV;
         
         /// <summary>
-        /// btnPurchaseOrderAdd control.
+        /// btnCOCAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnPurchaseOrderAdd;
+        protected global::System.Web.UI.WebControls.ImageButton btnCOCAdd;
         
         /// <summary>
-        /// btnPurchaseOrderCancel control.
+        /// btnCOCCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnPurchaseOrderCancel;
+        protected global::System.Web.UI.WebControls.ImageButton btnCOCCancel;
         
         /// <summary>
-        /// trEnablePurchaseWorkOrder control.
+        /// trEnableCOC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTableRow trEnablePurchaseWorkOrder;
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow trEnableCOC;
         
         /// <summary>
-        /// hfPurchaseWorkOrderID control.
+        /// lnkAddCOC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hfPurchaseWorkOrderID;
-        
-        /// <summary>
-        /// lnkAddPurchaseWorkOrder control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton lnkAddPurchaseWorkOrder;
+        protected global::System.Web.UI.WebControls.ImageButton lnkAddCOC;
         
         /// <summary>
         /// mpeEdit control.
@@ -328,13 +319,13 @@ namespace ACE.PurchaseOrder.QualityDocuments {
         protected global::System.Web.UI.WebControls.Panel pnlGridView;
         
         /// <summary>
-        /// gvPurchaseWorkOrder control.
+        /// gvCOC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvPurchaseWorkOrder;
+        protected global::System.Web.UI.WebControls.GridView gvCOC;
         
         /// <summary>
         /// trUpdateCancelButtonRow control.
@@ -364,22 +355,22 @@ namespace ACE.PurchaseOrder.QualityDocuments {
         protected global::System.Web.UI.WebControls.Panel pnlStatusEdit;
         
         /// <summary>
-        /// rfvPurchaseWorkOrder control.
+        /// rfvCOC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPurchaseWorkOrder;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCOC;
         
         /// <summary>
-        /// lblPurchaseWorkOrderValidation control.
+        /// lblCOCValidation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPurchaseWorkOrderValidation;
+        protected global::System.Web.UI.WebControls.Label lblCOCValidation;
         
         /// <summary>
         /// Tr8 control.
@@ -391,22 +382,22 @@ namespace ACE.PurchaseOrder.QualityDocuments {
         protected global::System.Web.UI.HtmlControls.HtmlTableRow Tr8;
         
         /// <summary>
-        /// lblPurchaseWorkOrder control.
+        /// lblCOC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPurchaseWorkOrder;
+        protected global::System.Web.UI.WebControls.Label lblCOC;
         
         /// <summary>
-        /// txtPurchaseWorkOrder control.
+        /// txtCOC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPurchaseWorkOrder;
+        protected global::System.Web.UI.WebControls.TextBox txtCOC;
         
         /// <summary>
         /// FilteredTextBoxExtender3 control.
@@ -472,21 +463,21 @@ namespace ACE.PurchaseOrder.QualityDocuments {
         protected global::System.Web.UI.WebControls.DropDownList ddlReviewedBy;
         
         /// <summary>
-        /// btnPurchaseWorkOrderAdd control.
+        /// btnCOCAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnPurchaseWorkOrderAdd;
+        protected global::System.Web.UI.WebControls.ImageButton btnCOCAdd;
         
         /// <summary>
-        /// btnPurchaseWorkOrderCancel control.
+        /// btnCOCCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnPurchaseWorkOrderCancel;
+        protected global::System.Web.UI.WebControls.ImageButton btnCOCCancel;
     }
 }

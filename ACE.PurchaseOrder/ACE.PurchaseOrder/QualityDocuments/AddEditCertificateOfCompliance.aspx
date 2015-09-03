@@ -34,7 +34,7 @@
                                             </td>
                                             <td style="width: 60%" align="left">
                                                 <asp:DropDownList ID="ddlContact" AppendDataBoundItems="true" Width="150px" CssClass="Dropdownlist"
-                                                    runat="server">
+                                                    runat="server" OnSelectedIndexChanged="ddlContact_SelectedIndexChanged">
                                                     <asp:ListItem Value="">-- Select One --</asp:ListItem>
                                                 </asp:DropDownList>
                                             </td>
@@ -120,10 +120,10 @@
                                             <td colspan="2">
                                                 <center>
                                                     <br />
-                                                    <asp:ImageButton ID="btnPurchaseOrderAdd" runat="server" ImageAlign="Middle" ImageUrl="../Images/btnSave.gif"
-                                                        CausesValidation="true" ValidationGroup="ValidatePurchaseOrder" TabIndex="102" OnClick="btnPurchaseOrderAdd_Click" />&nbsp;
-                                                    <asp:ImageButton ID="btnPurchaseOrderCancel" runat="server" ImageUrl="../Images/btnCancel.gif"
-                                                        CausesValidation="false" ImageAlign="Middle" TabIndex="103" OnClick="btnPurchaseOrderCancel_Click" />&nbsp;
+                                                    <asp:ImageButton ID="btnCOCAdd" runat="server" ImageAlign="Middle" ImageUrl="../Images/btnSave.gif"
+                                                        CausesValidation="true" ValidationGroup="ValidatePurchaseOrder" TabIndex="102" OnClick="btnCOCAdd_Click" />&nbsp;
+                                                    <asp:ImageButton ID="btnCOCCancel" runat="server" ImageUrl="../Images/btnCancel.gif"
+                                                        CausesValidation="false" ImageAlign="Middle" TabIndex="103" OnClick="btnCOCCancel_Click" />&nbsp;
                                                 </center>
                                             </td>
                                         </tr>
@@ -131,35 +131,43 @@
                                 </asp:Panel>
                             </td>
                         </tr>
-                        <tr id="trEnablePurchaseWorkOrder" runat="server">
+                        <tr id="trEnableCOC" runat="server">
                             <td colspan="2">
 
                                 <table border="0" style="text-align: left; width: 97%">
                                     <tr>
-                                        <td align="right">
-                                            <asp:HiddenField ID="hfPurchaseWorkOrderID" runat="server" Value="0" />
-                                            <asp:ImageButton ID="lnkAddPurchaseWorkOrder" runat="server" ImageUrl="~/Images/add.gif" OnClick="lnkAddPurchaseWorkOrder_Click" />
+                                        <td align="right">                                            
+                                            <asp:ImageButton ID="lnkAddCOC" runat="server" ImageUrl="~/Images/add.gif" OnClick="lnkAddCOCOrder_Click" />
                                             <cc1:modalpopupextender id="mpeEdit" runat="server" backgroundcssclass="modalBackground"
                                                 dropshadow="false" popupcontrolid="pnlStatusEdit" popupdraghandlecontrolid="pnlStatusEdit"
-                                                targetcontrolid="lnkAddPurchaseWorkOrder">
+                                                targetcontrolid="lnkAddCOC">
                                             </cc1:modalpopupextender>
                                         </td>
                                     </tr>
                                     <tr valign="top">
                                         <td valign="top" align="left">
                                             <asp:Panel ID="pnlGridView" runat="Server" Width="100%" Height="400px" ScrollBars="vertical">
-                                                <asp:GridView ID="gvPurchaseWorkOrder" runat="server" DataKeyNames="PurchaseWorkOrderID" AllowSorting="true"
-                                                    OnRowDataBound="gvPurchaseWorkOrder_RowDataBound" OnRowDeleting="gvPurchaseWorkOrder_RowDeleting"
-                                                    OnRowEditing="gvPurchaseWorkOrder_RowEditing">
+                                                <asp:GridView ID="gvCOC" runat="server" DataKeyNames="COCID" AllowSorting="true"
+                                                    OnRowDataBound="gvCOC_RowDataBound" OnRowDeleting="gvCOC_RowDeleting"
+                                                    OnRowEditing="gvCOC_RowEditing">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="S.No" ItemStyle-Width="2%">
                                                             <ItemTemplate>
                                                                 <asp:Label ID="lblSerial" runat="server"></asp:Label>
                                                             </ItemTemplate>
                                                         </asp:TemplateField>
-                                                        <asp:BoundField DataField="PurchaseOrderID" HeaderText="PurchaseOrderID" />
-                                                        <asp:BoundField DataField="PurchaseWorkOrderID" HeaderText="PurchaseWorkOrderID" />
-                                                        <asp:BoundField DataField="WorkerNo" ReadOnly="true" ItemStyle-Width="14%" HeaderText="Worker No">
+                                                        <asp:BoundField DataField="COCReferenceID" HeaderText="PurchaseOrderID" />
+                                                        <asp:BoundField DataField="COCID" HeaderText="COCID" />
+                                                        <asp:BoundField DataField="Requirements" ReadOnly="true" ItemStyle-Width="14%" HeaderText="Requirements">
+                                                            <ItemStyle />
+                                                        </asp:BoundField>
+                                                        <asp:BoundField DataField="Reference" ReadOnly="true" ItemStyle-Width="14%" HeaderText="Reference">
+                                                            <ItemStyle />
+                                                        </asp:BoundField>
+                                                        <asp:BoundField DataField="NoofPages" ReadOnly="true" ItemStyle-Width="14%" HeaderText="NoofPages">
+                                                            <ItemStyle />
+                                                        </asp:BoundField>
+                                                        <asp:BoundField DataField="MeetRequirement" ReadOnly="true" ItemStyle-Width="14%" HeaderText="MeetRequirement">
                                                             <ItemStyle />
                                                         </asp:BoundField>
 
@@ -171,11 +179,11 @@
                                                                 <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
                                                                     <tr>
                                                                         <td style="width: 50%" align="left">
-                                                                            <asp:ImageButton ID="ibtnEditPurchaseWorkOrder" runat="server" ToolTip="Edit" ImageUrl="~/Images/icon_edit.gif"
+                                                                            <asp:ImageButton ID="ibtnEditCOC" runat="server" ToolTip="Edit" ImageUrl="~/Images/icon_edit.gif"
                                                                                 AlternateText="Edit" CommandName="Edit"></asp:ImageButton>
                                                                         </td>
                                                                         <td style="width: 50%" align="right">
-                                                                            <asp:ImageButton ID="ibtnDeletePurchaseWorkOrder" runat="server" ToolTip="Delete" ImageUrl="~/Images/icon_del.gif"
+                                                                            <asp:ImageButton ID="ibtnDeleteCOC" runat="server" ToolTip="Delete" ImageUrl="~/Images/icon_del.gif"
                                                                                 AlternateText="Delete" CommandName="Delete"></asp:ImageButton>
                                                                         </td>
                                                                     </tr>
@@ -206,21 +214,21 @@
                                     <table style="width: 100%; text-align: center" border="0" cellpadding="3" cellspacing="3">
                                         <tr>
                                             <td colspan="2" style="width: 100%; text-align: left">
-                                                <asp:RequiredFieldValidator ID="rfvPurchaseWorkOrder" runat="server" ValidationGroup="ValidatePurchaseWorkOrder"
+                                                <asp:RequiredFieldValidator ID="rfvCOC" runat="server" ValidationGroup="ValidateCOC"
                                                     ControlToValidate="txtQty" ErrorMessage="Please Enter the Qty" SetFocusOnError="True">
                                                     <li style="list-style-type: circle">
-                                                        <asp:Label ID="lblPurchaseWorkOrderValidation" runat="server" ForeColor="red" Text="Please Enter the Qty"></asp:Label></li>
+                                                        <asp:Label ID="lblCOCValidation" runat="server" ForeColor="red" Text="Please Enter the Qty"></asp:Label></li>
                                                 </asp:RequiredFieldValidator>
                                             </td>
                                         </tr>
                                         <tr id="Tr8" runat="server">
                                             <td style="width: 40%" align="right">
-                                                <asp:Label ID="lblPurchaseWorkOrder" CssClass="Label" runat="server" Text="PurchaseWorkOrder"></asp:Label>
+                                                <asp:Label ID="lblCOC" CssClass="Label" runat="server" Text="COC"></asp:Label>
                                             </td>
                                             <td style="width: 60%" align="left">
-                                                <asp:TextBox ID="txtPurchaseWorkOrder" Width="240px" MaxLength="25" Text="" CssClass="textarea" runat="server">
+                                                <asp:TextBox ID="txtCOC" Width="240px" MaxLength="25" Text="" CssClass="textarea" runat="server">
                                                 </asp:TextBox>
-                                                <cc1:filteredtextboxextender id="FilteredTextBoxExtender3" runat="server" targetcontrolid="txtPurchaseWorkOrder"
+                                                <cc1:filteredtextboxextender id="FilteredTextBoxExtender3" runat="server" targetcontrolid="txtCOC"
                                                     filtertype="Custom" validchars="1234567890."
                                                     enabled="True" />
                                             </td>
@@ -258,10 +266,10 @@
                                             <td colspan="2">
                                                 <center>
                                                     <br />
-                                                    <asp:ImageButton ID="btnPurchaseWorkOrderAdd" runat="server" ImageAlign="Middle" ImageUrl="../Images/btnSave.gif"
-                                                        CausesValidation="true" ValidationGroup="ValidatePurchaseWorkOrder" TabIndex="102" OnClick="btnPurchaseWorkOrderAdd_Click" />&nbsp;
-                                    <asp:ImageButton ID="btnPurchaseWorkOrderCancel" runat="server" ImageUrl="../Images/btnCancel.gif"
-                                        CausesValidation="false" ImageAlign="Middle" TabIndex="103" OnClick="btnPurchaseWorkOrderCancel_Click" />&nbsp;
+                                                    <asp:ImageButton ID="btnCOCAdd" runat="server" ImageAlign="Middle" ImageUrl="../Images/btnSave.gif"
+                                                        CausesValidation="true" ValidationGroup="ValidateCOC" TabIndex="102" OnClick="btnCOCAdd_Click" />&nbsp;
+                                    <asp:ImageButton ID="btnCOCCancel" runat="server" ImageUrl="../Images/btnCancel.gif"
+                                        CausesValidation="false" ImageAlign="Middle" TabIndex="103" OnClick="btnCOCCancel_Click" />&nbsp;
                                                 </center>
                                             </td>
                                         </tr>
