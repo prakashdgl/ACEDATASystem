@@ -11,6 +11,34 @@ namespace ACE.PurchaseOrder.QualityDocuments
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!Page.IsPostBack)
+            {
+
+            }
+        }
+
+        protected void lnkAddCertificateOfCompliance_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/QualityDocuments/AddEditCertificateOfCompliance.aspx");
+        }
+
+        protected void gvCOC_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+
+        }
+
+        protected void gvCOC_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
+
+        protected void gvCOC_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+
+        }
+
+        protected void btnCancel_Click(object sender, ImageClickEventArgs e)
+        {
 
         }
     }

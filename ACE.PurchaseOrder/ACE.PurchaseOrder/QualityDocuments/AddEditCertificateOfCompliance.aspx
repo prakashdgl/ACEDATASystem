@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/COrder.Master" AutoEventWireup="true" CodeBehind="AddEditCertificateOfCompliance.aspx.cs" Inherits="ACE.PurchaseOrder.QualityDocuments.AddEditCertificateOfCompliance" %>
+
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">
 </asp:Content>
@@ -66,9 +67,9 @@
                                             <td style="width: 60%" align="left">
                                                 <asp:TextBox ID="txtQty" Width="240px" AutoPostBack="true" MaxLength="5" CssClass="textarea" runat="server">
                                                 </asp:TextBox>
-                                                <cc1:filteredtextboxextender id="ftbeQty" runat="server" targetcontrolid="txtQty"
-                                                    filtertype="Custom" validchars="1234567890"
-                                                    enabled="True" />
+                                                <cc1:FilteredTextBoxExtender ID="ftbeQty" runat="server" TargetControlID="txtQty"
+                                                    FilterType="Custom" ValidChars="1234567890"
+                                                    Enabled="True" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -76,7 +77,7 @@
                                                 <asp:Label ID="Label4" CssClass="Label" runat="server" Text="Description"></asp:Label>
                                             </td>
                                             <td style="width: 60%" align="left">
-                                                <asp:TextBox ID="txtDescription" Width="240px" MaxLength="300" CssClass="textarea" runat="server">
+                                                <asp:TextBox ID="txtDescription" Width="240px" MaxLength="500" CssClass="textarea" runat="server">
                                                 </asp:TextBox>
                                             </td>
                                         </tr>
@@ -85,7 +86,7 @@
                                                 <asp:Label ID="Label5" CssClass="Label" runat="server" Text="Part no"></asp:Label>
                                             </td>
                                             <td style="width: 60%" align="left">
-                                                <asp:TextBox ID="txtPartNo" Width="240px" MaxLength="30" CssClass="textarea" runat="server">
+                                                <asp:TextBox ID="txtPartNo" Width="240px" MaxLength="150" CssClass="textarea" runat="server">
                                                 </asp:TextBox>
                                             </td>
                                         </tr>
@@ -94,7 +95,7 @@
                                                 <asp:Label ID="Label6" CssClass="Label" runat="server" Text="EDS Rev"></asp:Label>
                                             </td>
                                             <td style="width: 60%" align="left">
-                                                <asp:TextBox ID="txtEDSRev" Width="240px" MaxLength="30" CssClass="textarea" runat="server">
+                                                <asp:TextBox ID="txtEDSRev" Width="240px" MaxLength="50" CssClass="textarea" runat="server">
                                                 </asp:TextBox>
                                             </td>
                                         </tr>
@@ -103,7 +104,7 @@
                                                 <asp:Label ID="Label7" CssClass="Label" runat="server" Text="Drawing No"></asp:Label>
                                             </td>
                                             <td style="width: 60%" align="left">
-                                                <asp:TextBox ID="txtDrawingNo" Width="240px" MaxLength="30" CssClass="textarea" runat="server">
+                                                <asp:TextBox ID="txtDrawingNo" Width="240px" MaxLength="100" CssClass="textarea" runat="server">
                                                 </asp:TextBox>
                                             </td>
                                         </tr>
@@ -112,10 +113,11 @@
                                                 <asp:Label ID="Label10" CssClass="Label" runat="server" Text="REV"></asp:Label>
                                             </td>
                                             <td style="width: 60%" align="left">
-                                                <asp:TextBox ID="txtREV" Width="240px" MaxLength="30" CssClass="textarea" runat="server">
+                                                <asp:TextBox ID="txtREV" Width="240px" MaxLength="50" CssClass="textarea" runat="server">
                                                 </asp:TextBox>
                                             </td>
                                         </tr>
+                                        
                                         <tr>
                                             <td colspan="2">
                                                 <center>
@@ -136,12 +138,12 @@
 
                                 <table border="0" style="text-align: left; width: 97%">
                                     <tr>
-                                        <td align="right">                                            
+                                        <td align="right">
                                             <asp:ImageButton ID="lnkAddCOC" runat="server" ImageUrl="~/Images/add.gif" OnClick="lnkAddCOCOrder_Click" />
-                                            <cc1:modalpopupextender id="mpeEdit" runat="server" backgroundcssclass="modalBackground"
-                                                dropshadow="false" popupcontrolid="pnlStatusEdit" popupdraghandlecontrolid="pnlStatusEdit"
-                                                targetcontrolid="lnkAddCOC">
-                                            </cc1:modalpopupextender>
+                                            <cc1:ModalPopupExtender ID="mpeEdit" runat="server" BackgroundCssClass="modalBackground"
+                                                DropShadow="false" PopupControlID="pnlStatusEdit" PopupDragHandleControlID="pnlStatusEdit"
+                                                TargetControlID="lnkAddCOC">
+                                            </cc1:ModalPopupExtender>
                                         </td>
                                     </tr>
                                     <tr valign="top">
@@ -221,26 +223,46 @@
                                                 </asp:RequiredFieldValidator>
                                             </td>
                                         </tr>
-                                        <tr id="Tr8" runat="server">
-                                            <td style="width: 40%" align="right">
-                                                <asp:Label ID="lblCOC" CssClass="Label" runat="server" Text="COC"></asp:Label>
-                                            </td>
-                                            <td style="width: 60%" align="left">
-                                                <asp:TextBox ID="txtCOC" Width="240px" MaxLength="25" Text="" CssClass="textarea" runat="server">
-                                                </asp:TextBox>
-                                                <cc1:filteredtextboxextender id="FilteredTextBoxExtender3" runat="server" targetcontrolid="txtCOC"
-                                                    filtertype="Custom" validchars="1234567890."
-                                                    enabled="True" />
-                                            </td>
-                                        </tr>
 
                                         <tr>
                                             <td style="width: 40%" align="right">
-                                                <asp:Label ID="Label2" CssClass="Label" runat="server" Text="Item no"></asp:Label>
+                                                <asp:Label ID="Label11" CssClass="Label" runat="server" Text="Requirements"></asp:Label>
                                             </td>
                                             <td style="width: 60%" align="left">
-                                                <asp:TextBox ID="txtReference" Width="240px" MaxLength="10" Text="" CssClass="textarea" runat="server">
+                                                <asp:TextBox ID="txtRequirements" Width="240px" MaxLength="300" Text="" CssClass="textarea" runat="server">
                                                 </asp:TextBox>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 40%" align="right">
+                                                <asp:Label ID="Label2" CssClass="Label" runat="server" Text="Reference"></asp:Label>
+                                            </td>
+                                            <td style="width: 60%" align="left">
+                                                <asp:TextBox ID="txtReference" Width="240px" MaxLength="150" Text="" CssClass="textarea" runat="server">
+                                                </asp:TextBox>
+                                            </td>
+                                        </tr>
+                                        <tr id="Tr8" runat="server">
+                                            <td style="width: 40%" align="right">
+                                                <asp:Label ID="lblNoofPages" CssClass="Label" runat="server" Text="No of Pages"></asp:Label>
+                                            </td>
+                                            <td style="width: 60%" align="left">
+                                                <asp:TextBox ID="txtNoofPages" Width="240px" MaxLength="10" Text="" CssClass="textarea" runat="server">
+                                                </asp:TextBox>
+                                                <cc1:FilteredTextBoxExtender ID="fteNoofPages" runat="server" TargetControlID="txtNoofPages"
+                                                    FilterType="Custom" ValidChars="1234567890."
+                                                    Enabled="True" />
+                                            </td>
+                                        </tr>
+                                        <tr id="Tr3" runat="server">
+                                            <td style="width: 40%" align="right">
+                                                <asp:Label ID="Label12" CssClass="Label" runat="server" Text="Meet Requirements"></asp:Label>
+                                            </td>
+                                            <td style="width: 60%" align="left">
+                                                <asp:RadioButtonList ID="rblMeetRequirements" runat="server" AutoPostBack="false" RepeatDirection="Horizontal" ViewStateMode="Enabled">
+                                                    <asp:ListItem Value="1" Text="Yes" Selected="True"></asp:ListItem>
+                                                    <asp:ListItem Value="0" Text="No" Selected="False"></asp:ListItem>
+                                                </asp:RadioButtonList>
                                             </td>
                                         </tr>
                                         <tr style="vertical-align: top;">
@@ -252,24 +274,14 @@
                                                 </asp:TextBox>
                                             </td>
                                         </tr>
-                                        <tr style="vertical-align: top;">
-                                            <td style="width: 40%" align="right">
-                                                <asp:Label ID="Label8" CssClass="Label" runat="server" Text="Reviewed By:"></asp:Label></td>
-                                            <td style="width: 60%" align="left">
-                                                <asp:DropDownList ID="ddlReviewedBy" AppendDataBoundItems="true" Width="150px" CssClass="Dropdownlist"
-                                                    runat="server">
-                                                    <asp:ListItem Value="">-- Select One --</asp:ListItem>
-                                                </asp:DropDownList></td>
-                                        </tr>
-
                                         <tr>
                                             <td colspan="2">
                                                 <center>
                                                     <br />
-                                                    <asp:ImageButton ID="btnCOCAdd" runat="server" ImageAlign="Middle" ImageUrl="../Images/btnSave.gif"
-                                                        CausesValidation="true" ValidationGroup="ValidateCOC" TabIndex="102" OnClick="btnCOCAdd_Click" />&nbsp;
-                                    <asp:ImageButton ID="btnCOCCancel" runat="server" ImageUrl="../Images/btnCancel.gif"
-                                        CausesValidation="false" ImageAlign="Middle" TabIndex="103" OnClick="btnCOCCancel_Click" />&nbsp;
+                                                    <asp:ImageButton ID="btnCOCReferenceAdd" runat="server" ImageAlign="Middle" ImageUrl="../Images/btnSave.gif"
+                                                        CausesValidation="true" ValidationGroup="ValidateCOC" OnClick="btnCOCReferenceAdd_Click" />&nbsp;
+                                    <asp:ImageButton ID="btnCOCReferenceCancel" runat="server" ImageUrl="../Images/btnCancel.gif"
+                                        CausesValidation="false" ImageAlign="Middle" OnClick="btnCOCReferenceCancel_Click" />&nbsp;
                                                 </center>
                                             </td>
                                         </tr>
